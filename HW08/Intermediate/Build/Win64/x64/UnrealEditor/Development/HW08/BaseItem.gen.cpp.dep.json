@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\baseitem.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\x64\\hw08editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hw08\\definitions.hw08.h",
+            "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\baseitem.h",
+            "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\iteminterface.h",
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\iteminterface.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\baseitem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

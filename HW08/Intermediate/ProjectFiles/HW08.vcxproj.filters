@@ -60,10 +60,94 @@
     <ClCompile Include="..\..\Source\HW08\Private\BaseCharacter.cpp">
       <Filter>Source\HW08\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\BaseGamemode.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\BaseItem.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\BasePlayerController.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\BigCoin.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\CoinItem.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\Gamemode08.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\HealingItem.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\ItemInterface.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\ItemSpawnRow.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\MineItem.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\PlayerCharacter.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\PlayerController1.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\SmallCoinItem.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\SpawnVolume.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\HW08\Public">
       <UniqueIdentifier>{B6F5C6A1-BE69-3F95-8597-55F3EF8AB6E9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\HW08\Public\BaseCharacter.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\BaseGamemode.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\BaseItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\BasePlayerController.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\BigCoin.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\CoinItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\Gamemode08.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\HealingItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\ItemInterface.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\ItemSpawnRow.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\MineItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\PlayerCharacter.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\PlayerController1.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\SmallCoinItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\SpawnVolume.h">
       <Filter>Source\HW08\Public</Filter>
     </ClCompile>
   </ItemGroup>
