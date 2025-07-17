@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Unreal\\Github\\HW08\\HW08\\Source\\HW08\\HW08.Build.cs",
+		"C:\\Unreal\\Github\\HW08\\HW08\\Source\\HW08.Target.cs",
+		"C:\\Unreal\\Github\\HW08\\HW08\\Source\\HW08Editor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}

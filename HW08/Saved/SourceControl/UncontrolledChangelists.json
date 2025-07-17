@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Unreal/Github/HW08/HW08/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/Level/HW08.umap",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_Gamemode.uasset"
+			]
+		}
+	]
+}
