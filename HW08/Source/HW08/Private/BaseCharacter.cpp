@@ -18,7 +18,7 @@ ABaseCharacter::ABaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	
+
 	// 스프링 암 컴포넌트와 카메라 컴포넌트를 생성하고 설정합니다.
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
@@ -34,6 +34,8 @@ ABaseCharacter::ABaseCharacter()
 	bUseControllerRotationYaw = false; // 캐릭터가 컨트롤러의 회전을 사용하지 않도록 설정합니다.
 	GetCharacterMovement()->bOrientRotationToMovement = true; // 이동 방향에 따라 캐릭터가 회전하도록 설정합니다.
 
+	MaxHealth = 100.0f;
+	Health = MaxHealth;
 
 }
 
@@ -100,4 +102,33 @@ void ABaseCharacter::Look(const FInputActionValue& Value)
 	const FVector2D LookAxis = Value.Get<FVector2D>();
 	AddControllerYawInput(LookAxis.X);
 	AddControllerPitchInput(LookAxis.Y);
+}
+
+void ABaseCharacter::AddHealth(float Amount)
+{
+	Health = FMath::Clamp(Health + Amount, 0.0f, MaxHealth);
+	UE_LOG(LogTemp, Log, TEXT("Health increased to: %f"), Health);
+}
+
+float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+
+	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	Health = FMath::Clamp(Health - DamageAmount, 0.0f, MaxHealth);
+	UE_LOG(LogTemp, Warning, TEXT("Health decreased to: %f"), Health);
+
+	if (Health <= 0.0f)
+	{
+		OnDeath();
+	}
+
+	return ActualDamage;
+
+}
+
+void ABaseCharacter::OnDeath()
+{
+	UE_LOG(LogTemp, Error, TEXT("Character is Dead!"));
+	//사망 후 로직
 }

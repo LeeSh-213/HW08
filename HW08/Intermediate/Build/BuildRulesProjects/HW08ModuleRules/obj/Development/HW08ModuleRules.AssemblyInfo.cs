@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW08ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3cf49bc0456c554e1a9cba01323c7da550a53fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14331e247c62a62639c8bf1e044303ca5344229e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW08ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW08ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,7 +11,22 @@
             "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\iteminterface.h",
             "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\iteminterface.generated.h",
             "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\baseitem.generated.h",
-            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\healingitem.generated.h"
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\healingitem.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\playercharacter.h",
+            "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\basecharacter.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\basecharacter.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\playercharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

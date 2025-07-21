@@ -34,7 +34,13 @@
             "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\playercontroller1.h",
             "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\baseplayercontroller.h",
             "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\baseplayercontroller.generated.h",
-            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\playercontroller1.generated.h"
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\playercontroller1.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\source\\hw08\\public\\firstgamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestate.generated.h",
+            "c:\\unreal\\github\\hw08\\hw08\\intermediate\\build\\win64\\unrealeditor\\inc\\hw08\\uht\\firstgamestate.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

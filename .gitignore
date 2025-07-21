@@ -31,6 +31,13 @@
 *.app
 *.ipa
 
+# 빌드 중간 결과물 (예: .rsp, .res, .pch, .obj 등)
+Intermediate/
+*.rsp
+*.res
+*.obj
+*.pch
+
 
 # 빌드된 바이너리 및 임시 파일
 Binaries/

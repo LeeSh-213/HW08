@@ -15,16 +15,7 @@
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
     <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
@@ -75,6 +66,12 @@
     <ClCompile Include="..\..\Source\HW08\Private\CoinItem.cpp">
       <Filter>Source\HW08\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\FirstGameInstance.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Private\FirstGameState.cpp">
+      <Filter>Source\HW08\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\HW08\Private\Gamemode08.cpp">
       <Filter>Source\HW08\Private</Filter>
     </ClCompile>
@@ -121,6 +118,12 @@
       <Filter>Source\HW08\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HW08\Public\CoinItem.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\FirstGameInstance.h">
+      <Filter>Source\HW08\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW08\Public\FirstGameState.h">
       <Filter>Source\HW08\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HW08\Public\Gamemode08.h">

@@ -9,12 +9,20 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UUserWidget;
 #ifdef HW08_PlayerController1_generated_h
 #error "PlayerController1.generated.h already included, missing '#pragma once' in PlayerController1.h"
 #endif
 #define HW08_PlayerController1_generated_h
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execStartGame); \
+	DECLARE_FUNCTION(execShowMainMenu); \
+	DECLARE_FUNCTION(execShowGameHUD); \
+	DECLARE_FUNCTION(execGetHUDWidget);
+
+
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerController1(); \
 	friend struct Z_Construct_UClass_APlayerController1_Statics; \
@@ -23,9 +31,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerController1)
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API APlayerController1(); \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	APlayerController1(APlayerController1&&); \
@@ -37,12 +43,13 @@ public: \
 	NO_API virtual ~APlayerController1();
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_12_PROLOG
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_15_GENERATED_BODY \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_13_PROLOG
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerController1_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

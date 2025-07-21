@@ -9,14 +9,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef HW08_SpawnVolume_generated_h
 #error "SpawnVolume.generated.h already included, missing '#pragma once' in SpawnVolume.h"
 #endif
 #define HW08_SpawnVolume_generated_h
 
 #define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_SpawnVolume_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execSpawnRandomItem); \
-	DECLARE_FUNCTION(execGetRandomPointInVolume);
+	DECLARE_FUNCTION(execSpawnRandomItem);
 
 
 #define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_SpawnVolume_h_16_INCLASS_NO_PURE_DECLS \

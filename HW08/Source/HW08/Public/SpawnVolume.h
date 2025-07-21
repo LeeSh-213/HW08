@@ -27,14 +27,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Spawning")
 	UDataTable* ItemDataTable;
 
-	UFUNCTION(BlueprintCallable, Category = "Spawning")
-	FVector GetRandomPointInVolume() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Spawning")
-	void SpawnRandomItem();
+	AActor* SpawnRandomItem();
 
 	FItemSpawnRow* GetRandomItem() const;
-	void SpawnItem(TSubclassOf<AActor> ItemClass);
-
+	AActor* SpawnItem(TSubclassOf<AActor> ItemClass);
+	FVector GetRandomPointInVolume() const;
 
 };
