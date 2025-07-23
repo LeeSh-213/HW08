@@ -25,6 +25,7 @@ void ACoinItem::ActivateItem(AActor* Activator)
 
 			}
 		}
+		Super::ActivateItem(Activator);
 
 		DestroyItem();
 	}

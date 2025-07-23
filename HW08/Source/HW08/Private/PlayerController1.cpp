@@ -76,6 +76,25 @@ void APlayerController1::ShowMainMenu(bool bIsRestart)
 			{
 				ButtonText->SetText(FText::FromString(TEXT("Start")));
 			}
+
+			if (bIsRestart)
+			{
+				UFunction* PlayAnimFunc = MainMenuWidgetInstance->FindFunction(FName("PlayGameOverAnim"));
+				if (PlayAnimFunc)
+				{
+					MainMenuWidgetInstance->ProcessEvent(PlayAnimFunc, nullptr);
+				}
+
+				if (UTextBlock* TotalScoreText = Cast<UTextBlock>(MainMenuWidgetInstance->GetWidgetFromName("TotalScoreText")))
+				{
+					if (UFirstGameInstance* PlayerGameInstance = Cast<UFirstGameInstance>(UGameplayStatics::GetGameInstance(this)))
+					{
+						TotalScoreText->SetText(FText::FromString(
+							FString::Printf(TEXT("Total Score: %d"), PlayerGameInstance->TotalScore)
+						));
+					}
+				}
+			}
 		}
 	}
 }
@@ -117,9 +136,10 @@ void APlayerController1::StartGame()
 {
 	if (UFirstGameInstance* PlayerGameInstance = Cast<UFirstGameInstance>(UGameplayStatics::GetGameInstance(this)))
 	{
-		PlayerGameInstance->CurrentLevelIndex = 0;
-		PlayerGameInstance->TotalScore = 0;
+		PlayerGameInstance->CurrentLevelIndex;
+		PlayerGameInstance->TotalScore;
 	}
 
 	UGameplayStatics::OpenLevel(GetWorld(), FName("HW08"));
+	SetPause(false);
 }

@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HW08_PlayerCharacter_generated_h
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
 	friend struct Z_Construct_UClass_APlayerCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerCharacter)
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerCharacter(); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~APlayerCharacter();
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_13_PROLOG
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_16_GENERATED_BODY \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_14_PROLOG
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_PlayerCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

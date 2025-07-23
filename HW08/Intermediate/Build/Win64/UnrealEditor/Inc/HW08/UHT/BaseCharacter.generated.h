@@ -14,12 +14,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HW08_BaseCharacter_generated_h
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execAddHealth); \
 	DECLARE_FUNCTION(execOnDeath);
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
@@ -28,7 +28,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ABaseCharacter(ABaseCharacter&&); \
@@ -40,13 +40,13 @@ public: \
 	NO_API virtual ~ABaseCharacter();
 
 
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_18_PROLOG
-#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_GENERATED_BODY \
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_19_PROLOG
+#define FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Github_HW08_HW08_Source_HW08_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

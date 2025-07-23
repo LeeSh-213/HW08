@@ -6,6 +6,7 @@
 #include "BaseCharacter.h"
 #include "PlayerCharacter.generated.h"
 
+class UWidgetComponent;
 
 /**
  * 
@@ -14,6 +15,10 @@ UCLASS()
 class HW08_API APlayerCharacter : public ABaseCharacter
 {
 	GENERATED_BODY()
+
+public:
+
+
 
 
 };

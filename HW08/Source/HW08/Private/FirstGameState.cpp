@@ -21,6 +21,9 @@ AFirstGameState::AFirstGameState()
 	CurrentLevelIndex = 0;
 	MaxLevels = 3;
 
+	LevelMapNames = { "HW08", "Wave02", "Wave03" };
+
+
 }	
 
 
@@ -161,14 +164,6 @@ void AFirstGameState::OnCoinCollected()
 void AFirstGameState::EndLevel()
 {
 
-	if (APlayerController1* PC1 = Cast<APlayerController1>(GetWorld()->GetFirstPlayerController())) // APlayerController1는 사용자 정의 플레이어 컨트롤러 클래스입니다.
-	{
-		if (PC1->HUDWidgetInstance) // HUD 위젯 인스턴스가 유효한지 확인
-		{
-			PC1->HUDWidgetInstance->RemoveFromParent(); // HUD 위젯을 제거합니다.
-			PC1->HUDWidgetInstance = nullptr; // 위젯 인스턴스를 nullptr로 설정하여 더 이상 사용하지 않도록 합니다.
-		}
-	}
 
 	GetWorldTimerManager().ClearTimer(LevelTimerHandle);
 
@@ -186,9 +181,10 @@ void AFirstGameState::EndLevel()
 				return;
 			}
 
-			if (LevelMapNames.IsValidIndex(CurrentLevelIndex))
+			if (LevelMapNames.IsValidIndex(CurrentLevelIndex)) // 현재 레벨 인덱스가 유효한지 확인합니다.
 			{
-				UGameplayStatics::OpenLevel(GetWorld(), LevelMapNames[CurrentLevelIndex]);
+				UGameplayStatics::OpenLevel(GetWorld(), LevelMapNames[CurrentLevelIndex]); // 다음 레벨로 이동합니다.
+				UpdateHUD();
 			}
 			else
 			{
@@ -196,14 +192,27 @@ void AFirstGameState::EndLevel()
 			}
 		}
 	}
+
+
 }
 
 void AFirstGameState::OnGameOver()
 {
+
+	if (APlayerController1* PC1 = Cast<APlayerController1>(GetWorld()->GetFirstPlayerController())) // APlayerController1는 사용자 정의 플레이어 컨트롤러 클래스입니다.
+	{
+		if (PC1->HUDWidgetInstance) // HUD 위젯 인스턴스가 유효한지 확인
+		{
+			PC1->HUDWidgetInstance->RemoveFromParent(); // HUD 위젯을 제거합니다.
+			PC1->HUDWidgetInstance = nullptr; // 위젯 인스턴스를 nullptr로 설정하여 더 이상 사용하지 않도록 합니다.
+		}
+	}
+
 	if (APlayerController* PlayerController = GetWorld()->GetFirstPlayerController())
 	{
 		if (APlayerController1* PlayerController1 = Cast<APlayerController1>(PlayerController))
 		{
+			PlayerController1->SetPause(true);
 			PlayerController1->ShowMainMenu(true);
 		}
 	}
@@ -234,9 +243,9 @@ void AFirstGameState::UpdateHUD()
 						}
 					}
 				}
-				if (UTextBlock* LevelIndexText = Cast<UTextBlock>(HUDWidget->GetWidgetFromName(TEXT("Level"))))
+				if (UTextBlock* WaveText = Cast<UTextBlock>(HUDWidget->GetWidgetFromName(TEXT("Wave"))))
 				{
-					LevelIndexText->SetText(FText::FromString(FString::Printf(TEXT("Level: %d"), CurrentLevelIndex + 1)));
+					WaveText->SetText(FText::FromString(FString::Printf(TEXT("Level: %d"), CurrentLevelIndex + 1)));
 				}
 			}
 		}

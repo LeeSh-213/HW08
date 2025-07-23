@@ -13,6 +13,7 @@ class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
+class UWidgetComponent;
 
 
 UCLASS()
@@ -55,6 +56,8 @@ protected:
 	virtual void OnDeath();
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	
+	virtual void UpdateOverheadHP();
 
 public:	
 	virtual void Tick(float DeltaTime) override;
@@ -65,6 +68,9 @@ public:
 	//int32 GetHealth() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
-	void AddHealth(float Amount);
+	virtual void AddHealth(float Amount);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	UWidgetComponent* OverheadWidget;
 
 };

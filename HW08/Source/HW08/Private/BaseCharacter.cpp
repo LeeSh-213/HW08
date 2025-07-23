@@ -11,6 +11,9 @@
 #include "InputMappingContext.h"
 #include "InputAction.h"
 #include "InputActionValue.h"
+#include "Components/WidgetComponent.h"
+#include "Components/TextBlock.h"
+#include "FirstGameState.h"
 
 
 
@@ -37,11 +40,17 @@ ABaseCharacter::ABaseCharacter()
 	MaxHealth = 100.0f;
 	Health = MaxHealth;
 
+	OverheadWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("OverheadWidget"));
+	OverheadWidget->SetupAttachment(GetMesh());
+	OverheadWidget->SetWidgetSpace(EWidgetSpace::Screen);
+
+
 }
 
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	UpdateOverheadHP();
 
 
 	if (APlayerController* PC = Cast<APlayerController>(Controller))
@@ -107,7 +116,8 @@ void ABaseCharacter::Look(const FInputActionValue& Value)
 void ABaseCharacter::AddHealth(float Amount)
 {
 	Health = FMath::Clamp(Health + Amount, 0.0f, MaxHealth);
-	UE_LOG(LogTemp, Log, TEXT("Health increased to: %f"), Health);
+	UpdateOverheadHP();
+
 }
 
 float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -116,7 +126,7 @@ float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageE
 	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
 	Health = FMath::Clamp(Health - DamageAmount, 0.0f, MaxHealth);
-	UE_LOG(LogTemp, Warning, TEXT("Health decreased to: %f"), Health);
+	UpdateOverheadHP();
 
 	if (Health <= 0.0f)
 	{
@@ -129,6 +139,23 @@ float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageE
 
 void ABaseCharacter::OnDeath()
 {
-	UE_LOG(LogTemp, Error, TEXT("Character is Dead!"));
-	//»ç¸Á ÈÄ ·ÎÁ÷
+	AFirstGameState* GameState = GetWorld() ? GetWorld()->GetGameState<AFirstGameState>() : nullptr;
+	if (GameState)
+	{
+		GameState->OnGameOver();
+	}
+
+}
+
+void ABaseCharacter::UpdateOverheadHP()
+{
+	if (!OverheadWidget) return;
+
+	UUserWidget* OverheadWidgetInstance = OverheadWidget->GetUserWidgetObject();
+	if (!OverheadWidgetInstance) return;
+
+	if (UTextBlock* HPText = Cast<UTextBlock>(OverheadWidgetInstance->GetWidgetFromName(TEXT("OverHeadHP"))))
+	{
+		HPText->SetText(FText::FromString(FString::Printf(TEXT("%.0f / %.0f"), Health, MaxHealth)));
+	}
 }

@@ -18,7 +18,15 @@
 				"C:/Unreal/Github/HW08/HW08/Content/UI/Font/NEXON_Lv2_Gothic_OTF_Medium_Font.uasset",
 				"C:/Unreal/Github/HW08/HW08/Content/Level/MenuLevel.umap",
 				"C:/Unreal/Github/HW08/HW08/Content/UI/WBP_MainMenu.uasset",
-				"C:/Unreal/Github/HW08/HW08/Content/BP_Gamemode.uasset"
+				"C:/Unreal/Github/HW08/HW08/Content/BP_Gamemode.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/UI/WBP_HP.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_Character.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_Mine.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_SmallCoin.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_BigCoin.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/BluePrint/BP_HealingItem.uasset",
+				"C:/Unreal/Github/HW08/HW08/Content/Level/Wave02.umap",
+				"C:/Unreal/Github/HW08/HW08/Content/Level/Wave03.umap"
 			]
 		}
 	]

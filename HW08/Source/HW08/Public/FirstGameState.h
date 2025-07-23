@@ -6,9 +6,9 @@
 #include "GameFramework/GameState.h"
 #include "FirstGameState.generated.h"
 
-/**
- * 
- */
+
+
+
 UCLASS()
 class HW08_API AFirstGameState : public AGameState
 {
@@ -62,6 +62,10 @@ public:
 	void EndLevel();
 
 	void UpdateHUD();
+
+protected:	
+	//void HandleWaveFlow();
+
 
 
 };
